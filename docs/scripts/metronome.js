@@ -13,10 +13,10 @@ let h = window.innerHeight - 100;
 let r = new PIXI.Graphics();
 r.beginFill(0x66CCFF);
 r.lineStyle(1, 0xFF3300, 1);
-r.drawRect(-w/2, 0, w, h);
+r.drawRect(-w/2, -h, w, h);
 r.endFill();
 r.x = (window.innerWidth) / 2;
-r.y = 20;
+r.y = window.innerHeight - 20;
 
 let s = new PIXI.Graphics();
 s.beginFill(0xFFFFFF);
@@ -24,7 +24,7 @@ s.lineStyle(1, 0xFFFFFF, 1);
 s.drawRect(-w/4, 0, w/2, h/10);
 s.endFill();
 s.x = (window.innerWidth) / 2;
-s.y = (window.innerHeight - 100) ;
+s.y = 60 ;
 
 let text = new PIXI.Text(bpm,{fontFamily : 'Arial', fontSize: 24, fill : 0xff1010, align : 'center'});
 
